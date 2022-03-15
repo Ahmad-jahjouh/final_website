@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>Apple</title>
+            <script src=""></script>
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="apple.svg" class="logo" width="60px" height="60px">
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="home.html" class="nc">HOME</a>
+            </li>
+            <li>
+                <a href="products.html" class="nc">PRODUCTS</a>
+            </li>
+            <li>
+                <a href="" class="nc">ABOUT US</a>
+            </li>
+            <li>
+                <a href="" class="nc">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div id="single-product-container">
+        <h3 style="margin-left: 250px; font-weight: bold; font-size: 22px;">Single product</h3>
+        <img src="macAir.jpg" alt="" class="photocon">
+
+
+
+        <div class="single-product-data">
+            <h6>Macbook Air 2020</h6>
+
+            <p>
+                <h6 style=" display: inline; color: rgb(102, 207, 248);" id="fee">2300</h6>$</p>
+
+            <p>Macbook Air 2020 comes Nice modern design , inside M1 prossesor made by Apple at first time in Apple company & RAM 8GB,16GB . SSD 256GB,512GB , super Water cooling
+            </p>
+
+            <p style="color:  rgb(22, 183, 247);">total : <b style="color: black;" id="total">0</b>$</p>
+
+            <label>Quantity: </label>
+            <input type="number" name="quantity " id="input" min="1" max="15" onchange="calcTotal();">
+            <button id="button">ORDER NOW!</button>
+
+            <div id="hr"></div>
+
+            <p>Category: Browse, work, study</p>
+        </div>
+
+    </div>
+
+
+
+    <h3 style="margin-left: 200px;">You may also like</h3>
+
+    <div class="big-contaner">
+
+        <div class="contain ">
+            <a href="single product.html "> <img src="ip12.jpg" class="img"> </a>
+            <h4>iphone 12 </h4>
+            <h5>800$</h5>
+        </div>
+
+
+        <div class="contain ">
+            <a href="single product.html "> <img src="ipadPro.jpg" class="img"> </a>
+            <h4>ipad Pro </h4>
+            <h5>1150$</h5>
+        </div>
+
+        <div class="contain ">
+            <a href="single product.html "> <img src="macAir2.jpg" class="img"> </a>
+            <h4>Macbook Air </h4>
+            <h5>1800$</h5>
+        </div>
+
+
+        <div class="contain ">
+            <a href="single product.html "> <img src="whatch2.jpg" class="img"> </a>
+            <h4>Apple whatch 5</h4>
+            <h5>500$</h5>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="sub ">
+        <div class="subp ">
+            <strong>Subsicribe in website Now!</strong>
+            <article class="art">iteger vel turpis ultricies , lacinia ligula id lobortis augue. Vivamus porttitor dui id diclum efficitur phasellus vel interdum elit.</article>
+            <form action=" " method="get ">
+                <input type="email " name="User Email " id="email " placeholder="Your Email... ">
+                <button>SUBSICRIBE NOW!</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function calcTotal() {
+            document.getElementById("total").innerHTML = parseInt(document.getElementById("fee").innerHTML) * parseInt(document.getElementById("input").value);
+        }
+    </script>
+
+
+
+</body>
+<footer>
+    <div class="logo-container">
+        <img src="apple.svg " class="logofoot">
+    </div>
+    <div>
+        <nav>
+            <ul class="nav ">
+                <li class="li"><a>HOME</a></li>
+                <li class="li"><a>HELP</a></li>
+                <li class="li"><a>PRIVACY POLICY</a></li>
+                <li class="li"><a>HOW IT WORKS?</a></li>
+                <li class="li"><a>CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p style="width: fit-content; margin: 20px auto; font-size: 15px; color: rgb(192, 192, 192);"> Copyright &copy; Apple INC</p>
+</footer>
+
+</html>
